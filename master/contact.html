@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <script defer src="javascript/contact.js">
+    </script>
+    <title>NASA</title>
+  </head>
+  <link rel="stylesheet" href="./css/master.css">
+  <body>
+    <header>
+      <nav>
+        <ul class="headerelementmenu">
+          <a href="./index.html"><img class="headerelement logo" src="./images/nasalogo.png" alt="nasalogo"></a>
+          <li><a class="links" href="./index.html">Home</a></li>
+          <li><a class="links" href="./apod.html">APOD</a></li>
+          <li><a class="links" href="./about.html">About</a></li>
+          <li><a class="links" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- This one works, but I returned to an older code I've used that worked better
+    <main>
+      <div id="error"></div>
+      <form id="form">
+        <h1 class="contactheading">Contact form</h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="namebox">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" class ="emailbox">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <input type="text" id="message" name="message" class="messagebox">
+        </div>
+        <button type="submit" class="submitbutton">Submit</button>
+      </form>
+    </main>
+  -->
+  <main class="container content">
+    <h1 class="contactheading">Contact form</h1>
+    <form id="contactForm">
+        <div class="form-group">
+            <input class="form-control" name="firstName" id="firstName" placeholder="First name">
+            <div class="form-error" id="firstNameError">Please enter your first name</div>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="lastName" id="lastName" placeholder="Last name">
+            <div class="form-error" id="lastNameError">Please enter your last name</div>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="email" id="email" placeholder="Email">
+            <div class="form-error" id="emailError">Please enter your email address</div>
+            <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
+        </div>
+
+        <div class="form-group">
+            <textarea class="form-control" name="message" id="message" placeholder="Message (at least 10 characters)"></textarea>
+            <div class="form-error" id="messageError">The message must be at least 10 characters.</div>
+        </div>
+
+        <button type="submit" class="submit" id="submit">Submit</button>
+    </form>
+  </main>
+    <footer>
+      <p>
+        <ul class="footerelementmenu">
+          <li><a class="links" href="./index.html">Home</a></li>
+          <li><a class="links" href="./apod.html">APOD</a></li>
+          <li><a class="links" href="./about.html">About</a></li>
+          <li><a class="links" href="./contact.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li><p>Copyright &copy; Anniken Valstad Torget </p></li>
+        </ul>
+      </p>
+    </footer>
+  </body>
+</html>
